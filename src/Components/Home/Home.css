@@ -1,0 +1,77 @@
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+.background-image {
+  width: 100%;
+  height: 100vh;
+}
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 40%;
+  height: 45vh;
+  margin-bottom: 5%;
+}
+.p_tag {
+  width: 195px;
+  height: 37px;
+  margin-left: 72px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33px;
+  color: #463366;
+}
+
+@media screen and (max-width: 1300px) {
+  .background-image {
+    height: 70vh;
+  }
+  .Home {
+    height: 70vh;
+  }
+  .overlay-image {
+    width: 40%;
+    height: 25vh;
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .overlay-image {
+    top: 40%;
+    width: 40%;
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  .Home {
+    height: 55vh;
+  }
+  .background-image {
+    height: 50vh;
+  }
+  .overlay-image {
+    top: 10%;
+    height: 18vh;
+    margin-bottom: 20%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Home {
+    height: 40vh;
+  }
+  .overlay-image {
+    width: 100%;
+    height: 20%;
+    top: 11%;
+  }
+  .background-image {
+    width: 100%;
+    height: 40vh;
+  }
+}
