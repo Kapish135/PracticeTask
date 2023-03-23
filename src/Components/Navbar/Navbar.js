@@ -10,22 +10,24 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <div className="logo">
-          <img src={Image} alt="navimage" />
+          <img src={Image} className="logo_image" alt="navimage" />
         </div>
-        <div className="menu">
-          <ul>
-            <li>
-              <a href="/">Contact</a>
-            </li>
-            <li>
-              <a href="/">Work</a>
-            </li>
-          </ul>
-        </div>
-        <div className="menu-icon" onClick={() => setToogle(true)}>
-          <MenuIcon
-            sx={{ color: "#301E4E", fontSize: "30px", marginTop: "5px" }}
-          />
+        <div className="nav_options">
+          <div className="menu">
+            <ul>
+              <li>
+                <a href="/">Contact</a>
+              </li>
+              <li>
+                <a href="/">Work</a>
+              </li>
+            </ul>
+          </div>
+          <div className="menu-icon" onClick={() => setToogle(true)}>
+            <MenuIcon
+              sx={{ color: "#301E4E", fontSize: "30px", marginTop: "5px" }}
+            />
+          </div>
         </div>
       </div>
       {toogle && (
@@ -51,7 +53,7 @@ const Navbar = () => {
           </ul>
           <Button
             variant="contained"
-            sx={{ backgroundColor: "#FF6E6C", marginLeft: "7%" }}
+            sx={{ backgroundColor: "#FF6E6C", marginLeft: "10%" }}
           >
             BOOK AN FREE MARKETING AUDIT
           </Button>

@@ -1,7 +1,13 @@
+.header__ourpartners {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
 .heading__ourpartner {
+  margin-top: 0%;
   width: 25%;
-  height: 25vh;
-  margin-left: 6%;
+  height: 10vh;
+  margin-left: 4%;
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 689;
@@ -10,22 +16,26 @@
   letter-spacing: -0.015em;
   color: #301e4e;
 }
+.icon_image_container {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
 .p_ourpartner {
   width: 60%;
-  height: 4vh;
-  margin-left: 6%;
+  margin-left: 4%;
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 44px;
   letter-spacing: 0.0025em;
+  margin-top: 10%;
   color: #ff6e6c;
 }
 .text {
   width: 30%;
   height: 4vh;
-  margin-left: 33%;
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
@@ -41,12 +51,20 @@
   text-align: center;
 }
 .icons_ourpartner {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon_image_container {
+  width: 50%;
+}
+.icon_image {
+  width: 100%;
+  max-height: 100%;
 }
 @media screen and (max-width: 1100px) {
   .heading__ourpartner {
-    width: 20%;
-    height: 20vh;
+    height: 5vh;
     font-weight: 700;
     font-size: 62px;
     line-height: 83px;
@@ -60,44 +78,49 @@
     line-height: 31px;
   }
   .text {
-    width: 102px;
+    width: 70%;
     height: 33px;
     font-weight: 400;
     font-size: 25px;
     line-height: 33px;
-    text-align: center;
   }
 }
 @media screen and (max-width: 700px) {
+  .p_ourpartner {
+    width: 90%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .heading__ourpartner {
+    width: 20%;
+    height: 3vh;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+  }
+}
+@media screen and (max-width: 550px) {
   .text {
     width: 20%;
     height: 2vh;
     font-weight: 600;
     font-size: 15px;
     line-height: 19px;
-    margin-left: 22%;
-    /* text-align: center; */
+    margin-left: -45%;
+  }
+  .showcase_partners {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .heading__ourpartner {
+    height: 5vh;
   }
   .p_ourpartner {
-    width: 347px;
-    height: 18px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 15px;
   }
-  .heading__ourpartner {
-    width: 20%;
-    height: 8vh;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 53px;
-  }
-}
-@media screen and (max-width: 410px) {
-  .text {
-    margin-left: 4%;
-  }
-  .heading__ourpartner {
-    height: 10vh;
+  .header__ourpartners {
+    margin-top: 10%;
   }
 }

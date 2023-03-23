@@ -19,10 +19,10 @@ const Footer = () => {
         </div>
         <div className="Footer_options">
           <div className="options">
-            <p className="options_text">Home page</p>
+            <p className="options_text">Home </p>
             <p className="options_text">About us</p>
             <p className="options_text">Book audit</p>
-            <p className="options_text">Our services</p>
+            <p className="options_text">Services</p>
             <p className="options_text">Contact us</p>
             <p className="options_text">Blogs</p>
           </div>
